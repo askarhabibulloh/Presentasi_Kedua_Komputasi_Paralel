@@ -1,0 +1,6 @@
+3 Traditional ways how designer make computer run faster :
+
+
+1. Faster Clocks
+2. More Work/Clock per Cycles
+3. More Processor

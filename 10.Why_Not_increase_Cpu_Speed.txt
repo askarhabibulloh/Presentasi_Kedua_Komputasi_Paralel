@@ -1,0 +1,9 @@
+Kenapa kita tidak bisa tetap menambah clock speed?
+apakah transistor berhenti menjadi lebih kecil dan cepat?
+
+
+transistor tidak berhenti menjadi lebih kecil tapi masalah utamanya adalah menjalankan milyaran transistor menghasilkan panas yang sangat tinggi dan kita tidak bisa menjaga suhu prosesornya tetap dingin.
+
+sebagai konsekuensinya adalah kita tidak bisa membangun prosesor menggunakan cara yang sama seperti sebelumnya dengan membuat prosesor tunggal yang lebih cepat.
+
+alih alih memasukkan lebih banyak transistor ke satu inti, sekarang lebih relevan jika membuat inti yang kecil dan lebih efisien lalu memasukkan beberapa inti dalam satu prosesor.

@@ -1,0 +1,2 @@
+processor menjadi lebih cepat karena:
+memiliki lebih banyak transistor tersedia untuk komputasi karena clock speed telah mencapai titik jenuh dan menjadi konstan

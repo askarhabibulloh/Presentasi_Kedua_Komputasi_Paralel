@@ -1,0 +1,17 @@
+Jika kamu membajak sawah, mana yang lebih kamu pilih?
+2 Kerbau yang kuat atau 1024 ayam?
+
+ide terbesar untuk kursus ini adalah paralelism
+kita bisa menyelesaikan masalah besar dengan membaginya ke bagian bagian kecil, kemudian kita bisa menjalankan bagian bagian kecil ini pada waktu bersamaan.
+
+GPU Modern :
+1. memiliki ribuan ALU (Arithmetic Logic Unit - Unit penghitungan logika)
+2. Ratusan Processor
+3. Puluhan ribu threads
+
+sehingga bisa menjalankan tiap bagian dari masalahmu dalam paralel.
+
+dengan seluruh kekuatan komputasi ini bisa membantumu menyelesaikan masalahmu lebih cepat dari sebelumnya.
+
+
+Materi : GPGPU - General Purpose Programibility on the Graphics Processing Unit

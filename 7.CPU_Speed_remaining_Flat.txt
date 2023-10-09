@@ -1,0 +1,3 @@
+CPU modern terdiri dari transistor, setiap tahun transistor menjadi lebih kecil
+sebagai fiturnya, ukurannya berkurang, transistornya menjadi lebih kecil, berjalan lebih kencang,menggunakan tenaga yang lebih sedikit dan kita bisa menaruh lebih banyak processor pada chip.
+pada awal perkembangan hingga satu dekade terakhir kecepatan clock meningkat linear dengan tahun, tapi satu dekade terakhir ini pertumbuhan kecepatannya telah berubah lebih statis.
