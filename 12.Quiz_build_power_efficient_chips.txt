@@ -1,0 +1,4 @@
+teknik yang digunakan oleh desainer komputer untuk membangun chip yang lebih efisien dalam energi
+
+menambahkan lebih banyak prosesor yang sederhana ( dengan kompleksitas kontrol
+yang tidak terlalu rumit)

@@ -1,0 +1,18 @@
+membangun prosesor yang memiliki efisiensi energi yang tinggi
+
+pilihan pertama adalah meminimalisasi latensi
+latensi adalah jumlah waktu yang dihabiskan untuk menyelesaikan tugas
+kita mengukur latensi dalam satuan waktu seperti detik
+
+pilihan lainnya adalah throughput
+throughput adalah pekerjaan yang diselesaikan dalam satuan waktu
+kita mengukur throughput dalam bentuk satuan sebagai sesuatu per satuan waktu seperti pekerjaan/jam.
+
+sayangnya kedua tujuan ini tidaklah selaras
+
+
+pada cpu lebih kearah untuk meminimalkan latensi
+sedangkan gpu berorientasi pada throughput
+dalam hal grafis lebih mementingkan pixels per secind daripada latensi piksel tertentu
+tidak masalah membuat sebuah operasi piksel menjadi lebih lama jika throughput yang dihasilkan
+jauh lebih banyak.

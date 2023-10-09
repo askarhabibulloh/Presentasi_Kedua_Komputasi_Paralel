@@ -1,0 +1,9 @@
+kendala utama:kekuatan
+
+kenapa prosesor tradisional seperti CPU bukan prosesor dengan efisiensi energi tertinggi?
+CPU tradisional memiliki perangkat keras kontrol yang rumit, hal ini memberikan fleksibilitas dalam performa
+tapi semakin rumit perangkat keras untuk mengontrolnya maka akan menambah sumber daya dalam
+power dan kompleksitas desain
+
+jika kita ingin mencari yang paling menguntungkan dalam hal komputasi untuk jumlah yang tetap 
+dari power, maka kita harus membuat struktur kontrol yang lebih sederhana.

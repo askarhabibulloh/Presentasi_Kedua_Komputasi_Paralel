@@ -1,0 +1,22 @@
+sebagai perumpamaan ada mobil dan bus
+
+mobil memiliki kecepatan lebih tinggi
+tapi kapasitas lebih sedikit
+
+kecepatan lebih tinggi berarti latensi lebih rendah
+tapi throughputnya kecil
+
+bus memiliki kecepatan lebih rendah
+tapi kapasitasnya berkali lipat dari mobil
+
+misal bus dan mobil akan melewati jalan sepanjang 4500km
+bus memiliki kecepatan 50kmph dan kapasitas 40 orang
+mobil dengan kecepatan 200kmph dan kapasitas 2 orang
+
+latensi dari mobil adalah 22,5 jam
+dan throughputnya 0.089 orang/jam
+
+sedangkan bus memiliki latensi yang lebih buruk ayitu 90 jam
+tapi throughputnya 0.45 orang/jam
+
+desain dari gpu sangat memprioritaskan throughput
