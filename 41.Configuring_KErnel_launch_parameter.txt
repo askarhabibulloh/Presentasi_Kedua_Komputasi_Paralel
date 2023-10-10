@@ -1,0 +1,24 @@
+konfigurasi peluncuran kernel
+
+bentuk umum : kernel<<<grid of blocks,block of threads>>>(arguments)
+
+misal kita punya :
+square<<<dim3(bx,by,bz),dim3(tx,ty,tz),shmem>>>()
+
+grid of blocks: jumlah blocks == bx*by*bz
+blocks of threads : jumlah threads == tx*ty*tz
+//ingat tiap blocks memiliki maksimum threads
+parameter ketiga yaitu shmem : memori bersama dalam satuan byte yang dialokasikan per block
+
+// with great power, comes great responsibility. so launch kernel wisely
+
+
+setiap thread mengetahui index threadnya dalam suatu block
+sebenarnya thread mengetahui lebih dari itu.
+- thread Idx = index thread dalam block (tersedia ThreadIdx.x , threadIdx.y , dan threadIdx.z untuk masing masing sumbu)
+- blockDim = ukuran dari block , berapa banyak thread dari suatu block dinyatakan dengan sumbunya
+- blockIdx = index block dalam grid (tersedia blockIdx.x , blockIdx.y , dan blockIdx.z untuk masing masing sumbu)
+-gridDim = memberitahu ukuran grid untuk masing masing sumbu
+
+
+meemiliki grid dan blocks multidimensional lebih menyenangkan ketika anda memiliki masalah multidimensi juga

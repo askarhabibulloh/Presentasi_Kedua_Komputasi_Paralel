@@ -1,0 +1,5 @@
+- menulis program yang berjalan pada satu thread
+
+- bisa meluncurkan program yang berjalan pada sejumlaah threads
+
+- memahami bahwa tiap thread tahu indexnya masingmasing dalam block dan grid, sehingga bisa dengan tepat mengambil bagian pekerjaannnya untuk dihitung

@@ -1,0 +1,10 @@
+Quiz:
+kernel<<<dim3(8,4,2),dim3(16,16)>>>(...)
+
+berapa jumlah blocknya?
+berapa threads dalam block?
+berapa jumlah semua threads?
+
+jumlah block adalah 8*4*2 =64
+jumlah threads dalam block 16*16 = 256
+jumlah total adalah 64*256 = 16324
