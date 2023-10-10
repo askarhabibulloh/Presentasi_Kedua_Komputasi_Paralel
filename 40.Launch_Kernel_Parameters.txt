@@ -1,0 +1,46 @@
+konfigurasi peluncuran kernel
+
+//contoh kode:
+square<<<1,64>>>(d_out,d_in)
+
+didalam <<<>>> disebut parameter
+didalam () disebut argumen
+
+parameter pertama adalah jumlah block
+parameter kedua adalah jumlah thread
+jika diisi 1 dan 64 berarti akan meluncurkan 1 blocks dengan 64 threads per block
+
+hal yang perlu diperhatikan:
+- device bisa menjalankan banyak blocks dalam satu waktu
+- setiap block memiliki maksimal jumlah threads, pada gpu lama 512, dan pada gpu baru 1024 (mungkin sudah bertambah untuk sekarang)
+
+
+jika anda memiliiki banyak pekerjaan, makan anda akan membaginya pada sejumlah blocks yang isi threadsnya dibatasi.
+
+jika ingin meluncurkan 1280 threads maka ada beberapa konfigurasi yang mungkin, seperti:
+
+<<<10,128>>>
+<<<5,266>>>
+
+tapi kita tidak akan bisa menjalankan 
+<<<1,1280>>>
+karena sudah melebihi batas maksimal threads pada tiap blocks
+
+
+///DIMENSI dalam kernels
+jika kita menjalankan <<<10,128>>>
+maka akan ada 10 block sejajar dengan masing masing 128 threads, kurang lebih seperti ini:
+[128][128][128]...[128]
+
+begitu juga ketika menjalankan 5 blocks dengan ukuran 256 threads per block:
+[256][256][256][256][256]
+
+semua diagram peluncuran kernel diatas ada dalam satu dimensi yaitu dimensi x
+
+contoh 2 dimensi:
+kita akan memproses sebuah gambar dengan ukuran 128 x 128 pixels, dengan tiap pixels ditangani oleh satu thread. maka ada beberapa konfigurasi yang bisa kita gunakan seperti:
+meluncurkan 1 baris 128 block ke dimensi y
+dengan tiap block memiliki 1 baris 128 threads ke dimensi x
+
+alternatif lainnya adalah menjalankan 64 blocks dengan konfigurasi 8 blocks ke dimensi y dan 8 blocks ke dimensi x,
+setiap blocks memiliki 256 threads dalam format 16 mengarah ke dimensi x dan 16 kearah dimensi y
