@@ -1,0 +1,5 @@
+GPU bagus untuk:
+
+meluncurkan sejumlah besar threads secara efisien
+
+meluncurkan sejumlah besat thread dalam paralel

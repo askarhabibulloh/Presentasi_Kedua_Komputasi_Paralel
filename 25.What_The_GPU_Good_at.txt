@@ -1,0 +1,9 @@
+Apa kelebihan GPU?
+bagaimana menjalankan program dengan baik dalam model pemrograman ini?
+
+
+
+ingat hal ini saat melakukan pemrograman paralel:
+GPU bagus untuk meluncurkan banyak thread secara efisien, jika anda tidak meluncurkan banyak thread , bisa dikatakan hal ini adalah hal yang mubazir. bahkan GPU tidak akan ter revoke jika kurang dari 1000 thread dijalankan
+
+GPU bagus untuk menjalankan banyak thread secara paralel pada waktu bersamaan

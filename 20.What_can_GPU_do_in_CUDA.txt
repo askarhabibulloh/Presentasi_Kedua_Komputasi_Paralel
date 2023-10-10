@@ -1,0 +1,4 @@
+Hal yang bisa dilakukan GPU:
+- Bisa merespon permintaan CPu untuk mengirim data dari GPU ke CPU. tapi tidak bisa menginisialisasi proses ini
+- Bisa merespon permintaan CPU untuk menerima data yang dikirim CPU ke GPU. tapi tidak bisa menginisialisasi proses ini.
+- melakukan komputasi dari kernel yang diluncurkan oleh CPU. tapi tidak bisa meluncurkan kernel sendiri.

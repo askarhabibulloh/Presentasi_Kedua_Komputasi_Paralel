@@ -1,0 +1,11 @@
+Tipikal GPU programming:
+- CPU mengalokasikan memori pada GPU
+- CPU menyalin data input dari CPU ke GPU
+- CPU menjalankan kernel pada GPU untuk melakukan proses dari input
+- CPU menyalin data hasil komputasi pada GPU ke CPU 
+
+
+beberapa hal yang perlu diperhatikan :
+kita harus meminimalkan proses salin data antara CPU dan GPU.
+
+jika anda melakukan pepindahan banyak data hanya untuk melakukan sedikit komputasi pada data itu, komputasi GPU atau CUDA mungkin bukan hal yang cocok untuk anda.
