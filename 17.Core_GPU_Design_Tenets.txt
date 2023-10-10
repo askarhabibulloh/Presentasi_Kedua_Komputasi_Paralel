@@ -1,0 +1,9 @@
+GPU Design
+
+GPU memiliki banyak unit komputasi (ALU) sederhana yang jika digabungkan akan bisa melakukan komputasi dalam jumlah besar.
+
+secara umum GPU mengorbankan kontrol demi komputasi, memilih kontrol yang lebih sederhana tapi dengan daya komputasi yang lebih tinggi.
+
+sebagai konsekuensinya dari sisi pemrograman, hal ini menyebabkan adanya pemrograman paralel secara eksplisit. ketika kita menulis program untuk mesin ini kita tidak bisa menganggap ada kompiler ajaib untuk memetakan pekerjaan ke banyak prosesor.
+
+GPU mengoptimasi untuk throughput daripada latensi, prosesor bersedia meningkatkan latensi dari setiap komputasi individu dengan resiko lebih banyak komputasi yang dilakukan per detik.

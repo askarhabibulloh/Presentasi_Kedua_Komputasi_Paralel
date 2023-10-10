@@ -1,0 +1,26 @@
+komputer yang digunakan dalam paralel programming disebut heterogen computer, memiliki chip terpisah untuk CPU dan GPU.
+
+jika anda menjalankan program secara serial, itu hanya akan berjalan pada CPU.
+
+CUDA berperan untuk menjembatani processing yang ingin dilakukan di GPU.
+
+CUDA mendukung banyak bahasa, tapi pada kelas ini kita akan menggunakan bahasa C
+
+bagian dari CUDA ada C biasa yang akan berjalan di CPU (disebut 'host') dan yang berjalan pada GPU ('device') yang juga ditulis dalam C tapi akan menggunakan beberapa ekstensi untuk mengekspresikan paralelism.
+
+kompiler CUDA akan membagi kode yang dijalankan pada host dan device.
+
+CUDA mengasumsikan bahwa device adalah co-processor dari host. berarti host dan device memiliki perangkat memori terpisah masing masing seperti dalam bentuk DRAM
+
+
+yang terjadi ketika CPU dan GPU bekerja bersama:
+- Host memegang kendali, menjalankan program utama dan mengirimkan arahan ke PGU tentang apa yang harus diproses oleh GPU.
+- proses pertama adalah memindahkan memori dari CPU ke memori GPU 
+- kedua, memindahkan data dari GPU kembali ke CPU
+
+dalam bahasa C, memindahkan data dari satu memori ke memori lain disebut Memcpy, dan dalam pemrograman CUDA, menggunakan cudaMemcpy
+
+- ketiga, mengalokasikan memori pada GPU, pada pemrograman C ini menggunakan Malloc, sedangkan dalam CUDA menggunakan cudaMalloc
+- keempat, menjalankan program pada GPU untuk melakukan komputasi secara paralel yang disebut kernel
+
+secara umum, host akan meluncurkan kernel pada device

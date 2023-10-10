@@ -1,0 +1,10 @@
+GPU dari sudut pandang pengembang perangkat lunak
+
+jika anda memiliki chip dengan 8 core dan tiap core memiliki 8 svx vector operation yang mendukung hyperthreading 2 core per inti.
+secara matematis kita memiliki sebuah chip 128-way paralelism
+
+
+jika anda menjalankan sebuah program secara serial maka itu hanya akan menggunakan kurang dari 1% kemampuan chip ini.
+
+tidak diragukan bahwa paralel programming lebih sulit daripada serial, dalam kondisi apapun.
+tapi kompleksitas ini memiliki potensi peningkatan kinerja
