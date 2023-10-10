@@ -1,0 +1,15 @@
+Kode GPU memiliki 2 bagian, satu bagian berjalan di GPU dan satu bagian lagi berjalan di CPU
+
+kernel terlihat seperti program serial, jadi gagasasn tentang fakta bahwa kita akan melakukan loop ini sebanyak 64 kali, tidak diungkpkan sama sekali dalam program GPU
+
+yang terjadi ketika kita menjalankan 64 kali perpangkatan, maka yang terjadi adalah CPU meluncurkan 64 threads perpangkatan dan setiap thread akan menjalankan satu perpangkatan.
+
+
+
+pertanyaan:
+apa fungsinya menjalankan 64 tugas yang sama bersamaan?
+
+setiap thread mengetahui index masing masing, jika ada 64 thread maka akan ada thread0 sampai thread63, kemudian dapat menetapkan nomor urutan n untuk bekerja pada elemen ke n dari array
+
+
+secara umum anda menuliskan sebuah kernel sehingga dapat berjalan pada satu thread dalam satu waktu,kemudian anda akan menjalankan banyak thread yang masingmasing akan menjalankan kernel terebut secara independen.

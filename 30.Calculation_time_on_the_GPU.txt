@@ -1,0 +1,4 @@
+pada video ini kita memiliki 64 perkalian dan tiap perkalian memiliki waktu komputasi 10 ns.
+karena kita menjalankan komputasi secara paralel maka waktu yang dibutuhkan untuk menjalankan seluruhnya adalah 10 ns, 
+
+lebih cepat daripada menggunakan serial programming dengan komputasi tiap perkalian 2 ns, tapi dengan total 128 ns untuk 64 perkalian.
