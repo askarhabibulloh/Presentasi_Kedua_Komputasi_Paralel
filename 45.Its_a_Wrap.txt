@@ -1,0 +1,11 @@
+- tren teknologi
+
+- throughput vs latensi
+
+- tujuan desain GPU
+
+- Model programming GPU, dengan contoh
+
+- MAP
+
+Selanjutnya kita akan memproses gambar menjadi grayscale dengan melibatkan operasi map pada setiap piksel dalam gambar, dimana operasi pada setiap piksel mengubah warna input dari RGB menjadi nilai tunggal

@@ -1,0 +1,36 @@
+MAP
+
+misal kita memiliki 
+- sebuah himpunan element untuk diproses seperti [64 floats number]
+- fungsi untuk berjalan di setiap element, misal ["square] yang akan mengkuadratkan setiap elemen inputnya dan akan menghasilkan elemen output
+
+maka yang kita lakukan adalah menerapkan fungsi ke setiap elemen dalam himpunan
+ini adalah operasi paralel yang powerfull
+
+hal iini diabstrasikan yang dinamakan map dalam bentuk :
+map(elements,function)
+
+
+map adalah pondasi utama dalam komputasi GPU, banyak masalah yang akan diselesaikan oleh programmer GPU dan tentunya pada kelas ini dengan operasi map.
+
+gpu bagus untuk map karena 2 alasan:
+- gpu memiliki banyak prosesor paralel, GPU efisien dalam mendelegasikan komputasi setiap elemen ke prosesor-prosesor tersebut.
+- GPU dioptimalisasi untuk thorughput bukan untuk latensi, sebagai programmer mungkin akan lebih tertarik untuk mengoptimalkan kecepatan penyelesaian seluruh operasi map, daripada berfokus pada waktu yang diperlukan untuk menyelesaikan setiap individu elemen
+
+
+pola komunikasi untuk model map sederhana
+
+in : [] []  []  [] []
+     |   |   |  |   |
+out: [] []  []  [] []
+
+satu elemen masuk dan satu elemen keluar, dengan komputasi nomor elemen keluaran n hanya bergantung pada nomor elemen masukan n.
+
+ini adalah pola komunikasi yang sederhana dan sangat straight forward.
+
+perhitungan lain mungkin memerlukan pola komunikasi yang lebih kompleks dan kita akan mempelakjarinya pada kesempatan selanjutnya
+
+
+///QUIZ
+masalah yang bisa diselesaikan menggunakan operasi map:
+- dalam video ini hanya ada satu yang bisa diselesaikan yaitu: menambahkan satu angka untuk setiap elemen dalam array input
