@@ -44,3 +44,22 @@ dengan tiap block memiliki 1 baris 128 threads ke dimensi x
 
 alternatif lainnya adalah menjalankan 64 blocks dengan konfigurasi 8 blocks ke dimensi y dan 8 blocks ke dimensi x,
 setiap blocks memiliki 256 threads dalam format 16 mengarah ke dimensi x dan 16 kearah dimensi y
+
+
+jadi pada dasarnya CUDA mendukung 1,2 dan 3 dimensi untuk konfigurasi blocks dan threads
+
+
+ketika kita meluncurkan kernel menggunakan <<<>>> dan memberikan parameter, pada dasarnya kita memberikan 2 parameter dengan format triple chevron.
+
+parameter pertama adalah grid of blocks dan parameter kedua adalah block of thread :
+<<<grid of blocks, block of thread>>>
+yang mana keduanya mendukung hingga 3 dimensi, jika kita tidak menentukan dimensinya maka secara default akan memiliki dimensi 1
+
+contoh untuk inisialisasi 3 dimensi adalah dengan menuliskan dim3(x,y,z) dalam parameter
+//contoh ketika hanya menentukan x
+dim3(w,1,1) == dim3(w) == w
+
+
+
+pada akhirnya ketika kita menuliskan square<<<1,64>>> maka itu akan equivalent dengan:
+square<<<dim3(1,1,1),dim3(64,1,1)>>>
