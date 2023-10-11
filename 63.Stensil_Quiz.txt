@@ -1,0 +1,8 @@
+berapa kali elemen tertentu dalam array akan dibaca saat menerapkan masing masing stensil ini?
+
+jawaban: sejumlah elemen dalam stensil
+dalam 2d neumann akan membaca 5 kali karena ada 5 entri dalam lingkungan itu
+
+9 kali dalam 2d moore
+
+tujjuh kali dalam 3d neumann
