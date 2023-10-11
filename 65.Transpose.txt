@@ -1,0 +1,19 @@
+misal memiliki 
+
+
+struct foo{
+    int i;
+    float f;
+}
+
+foo array[1000];
+
+
+
+maka akan memiliki array dengan 2000 elemen selang seling integer dan float (total 1000 float dan 1000 integer) -- disebut AoS array of structure 
+kita butuh mengubah AoS menjadi SoA structure of array dengan 1000 elemen integer diawal dilanjutkan dengan 1000 elemen float selanjutnya
+ 
+ operasi ini disebut transpose
+
+
+ secara singkat, transpose adalah tugas menyusun ulang elemen data dalam memeori

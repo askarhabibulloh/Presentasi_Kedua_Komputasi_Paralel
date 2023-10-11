@@ -1,0 +1,36 @@
+//Transpose
+
+misal anda punya larik 2 dimensi, sperti gambar yang disusun dalam urutan baris utama, artinya elemen array, atau piksel gambar , disusun satu baris dalam satu waktu
+
+
+
+Transpose adalah operasi yang mengubah baris menjadi kolom dan sebaliknya dalam suatu matriks. Berikut adalah contoh sederhana transpose dari matriks 2x3 menjadi matriks 3x2:
+
+1  2  3
+4  5  6
+
+
+menjadi 
+
+1  4
+2  5
+3  6
+
+
+setiap thread membaca elemen yang ebrdekatan dalam array tapi menulis ke tempat tersebar dalam memori
+
+bisa dikatakan ini juga gather jika dibalik
+
+misal 
+
+1  2  3
+4  5  6
+dibuat menjadi sebaris maka akan menjadi
+[123456]
+
+tapi transpose nya
+1  4
+2  5
+3  6
+dibuat menjadi satu baris major akan menjadi
+[142536]
