@@ -1,0 +1,22 @@
+//Scatter
+
+daripada meminta setiap thread memebaac 3 elemen tetangga,menghitung rata rata nilainya dan menuliskan ke satu output. kita bisa meminta thread untuk membaca satu output dan memnambahakn 1/3 nilainya ke 3 elemen tetangga.
+jadi setipa penulisan ini akan menjadi operasi kenaikan.
+contoh lainnya adalah pada proses blur gambar dimana setiap thread mengambil 1 elemen masukan atau piksel dan menulis sebagian kecilknya ke nilai piksel tetangga.
+ketika setiap tuga paralel perlu menulis hasilnya di tempat yang berbeda atau di beberapa tempat, maka disebut scatter karena rangkaiannya menyebarkan hasil ke memori
+
+anda sudah bisa melihat masalah yang akan diselesaikan dengan scatter, anda punya beberapa rangkaian pesan yang mencoba menulis ke tempat yang sama dalam waktu yang berdekatan
+
+
+//kuiz
+anda diberi list nama pemain basket serta tinggi bada pemain serta peringkat tinggi badannya (tertinggi pertama, tertinggi kedua, tertinggi ketiga,dst)
+
+tugas: menulis rekor setiap pemain ke lokasinya dalam daftar yang diurutkan
+
+jika kita menerapkan ini di CUDA dengan meminta setiap thread membaca catatan dan melihat peringkatnyadan menggunakan peringkat tersebut untuk menentukan dimana harus menulis ke dalam array
+
+apakah proses ini termasuk map, gather atau scatter?
+
+jawabannya adalah scatter
+
+setiap thread menghitung tempat untuk menulis hasilnya

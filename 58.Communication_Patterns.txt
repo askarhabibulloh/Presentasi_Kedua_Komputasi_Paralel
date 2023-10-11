@@ -1,0 +1,8 @@
+Komputasi Paralel:
+
+banyak threads menyelesaikan masalah dengan  bekerja sama
+
+//Kerjasama ==> komunikasi
+
+didalam CUDA, komunikasi ini terjadi melalui memori
+misal, thread perlu membacaa dari lokasi input yang sama dan thread perlu untuk menulis ke lokasi output yang sama. terkadang thread perlu untuk menukar hasil antar thread

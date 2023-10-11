@@ -1,0 +1,13 @@
+berbagai pola komunikasi yang akan anda lihat dalam komputasi paralel, semua berfungsi untuk memetakan tugas dan memori secara bersamaan.
+
+Map: tugas membaca dan menulis ke elemen spesifik seperti array, antri dalam matriks atau piksel dalam gambar dimana anda akan melakukan fungsi atau komputasi yang sama pada setiap bagian data.
+berarti setiap tugas akan membaca dan menulis ke tempat tertentu pada memori. ada korespondensi 1 banding 1 antara input dan output jadi map akan efisien digunakan dalam gpu
+
+
+
+//Gather
+anngap setiap thread akan menghitung dan menyimpan rata rata di berbagai elemen data, katakanlah mungkin kita ingin menghitung rata rata setiap kumpulan 3 elemen secara bersamaan.
+berarti setiap thread menerima 3 input dari memori dan menuliskan 1 output 
+misal anda ingin melakukan blur pada satu gambara dengan menghitung rata rata sebuah piksel dengan piksel tetangganya
+
+operasi ini disebut pengumpulan / gather , karena setiap perhitungan mengumpulkan elemen data masukan dari tempat berbeda untuk menghitung hasil keluaran.
